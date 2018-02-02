@@ -34,7 +34,13 @@ var treeData = [
 // ************** Generate the tree diagram	 *****************
 var margin = {top: 0, right: 120, bottom: 20, left: 120},
 	width = 600 - margin.right - margin.left,
-	height = 250 - margin.top - margin.bottom;
+  height = 250 - margin.top - margin.bottom;
+  
+if (window.innerWidth < 600) {
+  width = window.innerWidth - 100;
+  margin.right = 20;
+  margin.left = 60;
+}
 	
 var i = 0,
 	duration = 750,
