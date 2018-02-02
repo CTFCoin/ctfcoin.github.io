@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CTFCoin</title>
+  <link rel="stylesheet" href="css/bulmaswatch.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+
+  <style>
+    .node {
+      cursor: pointer;
+    }
+
+    .node circle {
+      fill: rgb(223, 223, 223);
+      stroke: steelblue;
+      stroke-width: 3px;
+    }
+
+    .node text {
+      font-weight: 600;
+      font: 10px;
+    }
+
+    .link {
+      fill: none;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="hero is-light is-bold is-medium">
+    <div class="hero-head">
+      <nav class="navbar" role="navigation" aria-label="dropdown navigation">
+        <a class="navbar-item">
+          <div style="font-size:2.5em; color:rgb(175, 241, 253)">
+            <i class="fab fa-cuttlefish"></i>
+          </div>
+          <p style="color:aliceblue">TFCoin</p>
+        </a>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="field">
+              <p class="control">
+                <a class="button is-primary" href="#">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Github</span>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="hero-body">
+      <div class="columns">
+        <div class="column is-one-third">
+          <h1 class="title is-1">
+            CTFCoin
+          </h1>
+          <p class="subtitle is-4">
+            The world's only blockchain solution for security competitions.
+          </p>
+
+          <p>Seamlessly reward a cryptographically secure, blockchain based currency as an incentive for your CTFs. Allow donations
+            to CTFs with CTFCoin to help users incentivize higher quality competitions.
+          </p>
+        </div>
+        <div id="graph" class="column has-text-centered">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero section pt-80 is-info">
+    <div class="container">
+      <div class="columns is-multiline">
+        <div class="column is-full has-text-centered-touch has-text-left">
+          <h1 style="text-align: center" class="title is-size-1-desktop is-size-3-mobile has-text-weight-bold is-uppercase mb-20">
+            The ultimate solution to CTF funding
+          </h1>
+        </div>
+
+        <div class="column is-one-third">
+          <p class="is-size-4 has-text-centered has-text-warning has-text-weight-bold is-uppercase mb-10">Problem?</p>
+          <p class="is-size-5 has-text-left">There currently exists no way besides cash and non-purpose built crypto-currencies to reward competitive security
+            players during competitions. In addition, there is no way to incentivize higher quality CTFs besides ratings
+            on CTF-Time.</p>
+        </div>
+        <div class="column is-one-third">
+          <p class="is-size-4 has-text-centered has-text-warning has-text-weight-bold is-uppercase mb-10">Consequence?</p>
+          <p class="is-size-5 has-text-left">Our in-house research shows that the average CTF spends a large portion of its CTF-Time figuring out how to send
+            out cash rewards and verifying information of recepients.
+          </p>
+        </div>
+        <div class="column is-one-third">
+          <p class="is-size-4 has-text-centered has-text-warning has-text-weight-bold is-uppercase mb-10">Solution</p>
+          <p class="is-size-5 has-text-left">That is why we created CTFCoin, a simple, highly-intuitive, cryptographically secure, blockchain-verified, expertly
+            designed and coded currency explicitly for CTFs.
+          </p>
+        </div>
+      </div>
+  </section>
+
+  <section style="padding-top: 15px; padding-bottom: 15px;" class="hero section footer copyright is-primary">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-half">
+          <p class="is-size-7"><i class="far fa-copyright"></i> 2018 CTFCoin. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+<script src="js/graph.js"></script>
+
+</html>
